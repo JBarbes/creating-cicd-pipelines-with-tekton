@@ -17,7 +17,7 @@ spec:
       args:
         - "$(workspaces.source.path)"
     - name: mvn
-      image: gcr.io/cloud-builders/mvn
+      image: gcr.io/cloud-builders/mvn:latest
       workingDir: /workspace/source/$(params.path-to-context)
       command: ["/usr/bin/mvn"]
       args:
